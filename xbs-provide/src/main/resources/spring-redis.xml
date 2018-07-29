@@ -35,7 +35,7 @@
 
 	<bean id="redisGeneric" class="com.xuebusi.xbs.cache.RedisGeneric"
 		  init-method="init" destroy-method="close">
-		<property name="clusterNodes" value="192.168.2.1:7006, 192.168.2.1:7001, 192.168.2.1:7003, 192.168.2.1:7002, 192.168.2.1:7005, 192.168.2.1:7004"></property>
+		<property name="clusterNodes" value="192.168.71.13:7001, 192.168.71.13:7002, 192.168.71.13:7003, 192.168.71.13:7004, 192.168.71.13:7005, 192.168.71.13:7006"></property>
 		<property name="timeout" value="15000"></property>
 	</bean>
 

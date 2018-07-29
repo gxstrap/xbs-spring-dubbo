@@ -11,5 +11,12 @@
 
     <artifactId>xbs-domain</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xuebusi</groupId>
+            <artifactId>xbs-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
