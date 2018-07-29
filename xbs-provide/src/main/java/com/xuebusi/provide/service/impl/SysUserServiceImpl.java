@@ -188,13 +188,16 @@ public class SysUserServiceImpl implements ISysUserService {
      * @return
      */
     private SysUserVo getSysUserVo(SysUser sysUser) {
-        SysUserVo sysUserVo = new SysUserVo();
-        sysUserVo.setId(String.valueOf(sysUser.getId()));
-        sysUserVo.setName(sysUser.getName());
-        sysUserVo.setAddress(sysUser.getName());
-        sysUserVo.setPhone(sysUser.getPhone());
-        sysUserVo.setAge(String.valueOf(sysUser.getAge()));
-        return sysUserVo;
+        if (sysUser != null) {
+            SysUserVo sysUserVo = new SysUserVo();
+            sysUserVo.setId(String.valueOf(sysUser.getId()));
+            sysUserVo.setName(sysUser.getName());
+            sysUserVo.setAddress(sysUser.getName());
+            sysUserVo.setPhone(sysUser.getPhone());
+            sysUserVo.setAge(String.valueOf(sysUser.getAge()));
+            return sysUserVo;
+        }
+        return null;
     }
 
 }

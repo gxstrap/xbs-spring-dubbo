@@ -9,10 +9,8 @@ public class StandardProjectServiceLauncher {
     @SuppressWarnings("resource")
 	public static void main(String[] args) throws Exception {
     	logger.info("启动");
-		System.out.println("启动");
     	new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
     	logger.info("启动完成");
-		System.out.println("启动完成");
     	synchronized (StandardProjectServiceLauncher.class) {
 			while (true) {
 				try {
