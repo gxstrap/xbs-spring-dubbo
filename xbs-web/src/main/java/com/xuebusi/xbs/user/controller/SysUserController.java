@@ -36,22 +36,22 @@ public class SysUserController {
         return sysUserService.countByExample(sysUserDto);
     }
 
-    @GetMapping(value = "/deleteByExample")
+    @PostMapping(value = "/deleteByExample")
     public Boolean deleteByExample(@RequestBody SysUserDto sysUserDto) {
         return sysUserService.deleteByExample(sysUserDto);
     }
 
-    @GetMapping(value = "/deleteById")
+    @PostMapping(value = "/deleteById")
     public Boolean deleteById(@RequestParam("id") String id) {
         return sysUserService.deleteById(Long.valueOf(id));
     }
 
-    @GetMapping(value = "/save")
+    @PostMapping(value = "/save")
     public Boolean save(@RequestBody SysUserDto sysUserDto) {
         return sysUserService.save(sysUserDto);
     }
 
-    @GetMapping(value = "/saveSelective")
+    @PostMapping(value = "/saveSelective")
     public Boolean saveSelective(@RequestBody SysUserDto sysUserDto) {
         return sysUserService.saveSelective(sysUserDto);
     }
@@ -66,7 +66,7 @@ public class SysUserController {
         return sysUserService.selectById(Long.valueOf(id));
     }
 
-    @GetMapping(value = "/updateById")
+    @PostMapping(value = "/updateById")
     public Boolean updateById(@RequestBody SysUserDto sysUserDto) {
         return sysUserService.updateById(sysUserDto);
     }
